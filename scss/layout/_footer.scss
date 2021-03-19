@@ -1,0 +1,40 @@
+.footer__section {
+  position: relative;
+}
+
+.footer__info {
+  padding: 0 16.6667%;
+  @include mq($until:lg){
+    padding: 0 20px;
+  }
+}
+
+.footer__infoItem {
+  display: flex;
+  flex-wrap: wrap;
+  @include mq($until:lg){
+    display: block;
+  }
+  li{
+    width: 50%;
+    @include mq($until:lg){
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include mq($until:sm){
+      align-items: start;
+      flex-direction: column;
+    }
+  }
+}
+
+.footer__lable {
+  display: inline-block;
+  width: 8.3333vw;
+  @include mq($until:lg){
+    width: auto;
+  }
+}
+

@@ -1,0 +1,165 @@
+.show {
+  .header {
+    .header__portfolio {
+     .header__portfolioLogo {
+       #P,#O,#R,#T{
+         opacity: 1;
+       }
+     } 
+    }
+  }
+}
+
+.about {
+  position: relative;
+  padding: 60px 0 0;
+  margin-bottom: 160px;
+  @include mq(lg){
+    margin-bottom: 50vh;
+    padding: 25vh 0 0;
+  }
+}
+
+.about__section {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: -120px;
+  left: 16.6667%;
+  @include mq($until:lg){
+    position: static;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 48px;
+  }
+}
+
+.about__content {
+  @include mq(lg){
+    display: flex;
+  }
+}
+
+.about__imgItem {
+  width: 100%;
+  height: 70vw;
+  overflow: hidden;
+  @include mq(lg){
+    width: 50%;
+    height: 50vh;
+    padding-right: 10%;
+  }
+
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/mystory.jpg);
+  background-color: #2e2e2e;
+  background-size: cover;
+  background-position: center center;
+}
+
+.about__info {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+  @include mq(lg){
+    width: 50%;
+    padding: 0 16.6667% 0 0;
+    margin-top: 0;
+  }
+}
+
+.works__section {
+  position: relative;
+  margin-bottom: 50vh;
+}
+
+.works__list{
+  padding: 0 20px;
+  @include mq(lg){
+    padding:  0 12.5%; 
+  }
+}
+
+.works__item {
+    display: flex;
+    flex-direction: column;
+    @include mq(lg){
+      flex-direction: row;
+    }
+  &:nth-child(even){
+    @include mq(lg){
+    flex-direction: row-reverse;
+    }
+  }
+  &:not(:last-child){
+    margin-bottom: 32px;
+    @include mq(lg){
+      margin-bottom: 25vh;
+    }
+  }
+}
+
+.works__imgItem {
+  width: 100vw;
+  height: 70vw;
+  margin-left: -20px;
+  overflow: hidden;
+  @include mq(lg){
+    width: 50%;
+    height: 50vh;
+    margin-left: 0;
+  }
+}
+
+.works__img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.works__img1 {
+  background-image: url(../../img/store-outside.jpg);
+}
+
+.works__img2 {
+  background-image: url(../../img/KaohsiungTravel.png);
+}
+
+.works__img3 {
+  background-image: url(../../img/quality-02.jpg);
+}
+
+.works__info {
+  >h2{
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+    @include mq(lg){
+      font-size: 42px;
+      margin-bottom: 16px;  
+    }
+  }
+}
+
+.works__infoOdd{
+  @include mq(lg){
+    padding-left: 10%;
+  }
+}
+.works__infoEven {
+  @include mq(lg){
+    text-align: right;
+    padding-right: 10%;
+  }
+}

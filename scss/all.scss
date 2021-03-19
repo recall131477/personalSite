@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+@import 'config/normalize';
+@import 'config/reboot';
+@import 'config/mixins';
+@import 'config/variables';
+@import 'config/sass-mq';
+
+@import 'utilites/spacing/margin';
+@import 'utilites/spacing/padding';
+@import 'utilites/typography/color';
+@import 'utilites/typography/font-family';
+@import 'utilites/typography/font-size';
+@import 'utilites/typography/font-weight';
+@import 'utilites/typography/text-align';
+
+@import 'layout/wrap';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/index';
