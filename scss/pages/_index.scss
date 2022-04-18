@@ -12,7 +12,6 @@
 
 .about {
   position: relative;
-  padding: 60px 0 0;
   margin-bottom: 160px;
   @include mq(lg){
     margin-bottom: 50vh;
@@ -74,9 +73,15 @@
   }
 }
 
+.works {
+  margin-bottom: 160px;
+  @include mq(lg) {
+    margin-bottom: 50vh;
+  }
+}
+
 .works__section {
   position: relative;
-  margin-bottom: 50vh;
 }
 
 .works__list{
@@ -112,7 +117,7 @@
   overflow: hidden;
   @include mq(lg){
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     margin-left: 0;
   }
 }
@@ -129,15 +134,19 @@
 }
 
 .works__img1 {
-  background-image: url(../../img/store-outside.jpg);
+  background-image: url(../../img/work-1.png);
 }
 
 .works__img2 {
-  background-image: url(../../img/KaohsiungTravel.png);
+  background-image: url(../../img/work-2.png);
 }
 
 .works__img3 {
-  background-image: url(../../img/quality-02.jpg);
+  background-image: url(../../img/work-3.png);
+}
+
+.works__img4 {
+  background-image: url(../../img/work-4.png);
 }
 
 .works__info {
